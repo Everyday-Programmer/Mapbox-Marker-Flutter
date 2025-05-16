@@ -54,7 +54,6 @@ class _MapScreenState extends State<MapScreen> {
     // Add tap interaction to the map
     mapboxMap.addInteraction(
       TapInteraction.onMap((MapContentGestureContext context) async {
-        print('clicked');
         final point = context.point;
         await _addMarker(point);
       }),
